@@ -22,8 +22,8 @@ The official website for the Zeta Theta Chapter of Pi Kappa Phi at The Universit
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/texas-pi-kapp-website.git
-cd texas-pi-kapp-website
+git clone https://github.com/D3TRU04/TexasPiKappWebsite.git
+cd TexasPiKappWebsite
 ```
 
 2. Install dependencies:
@@ -59,4 +59,4 @@ src/
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License - see the LICENSE file for details.
