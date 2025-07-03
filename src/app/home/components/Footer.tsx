@@ -32,18 +32,11 @@ export function Footer() {
               <li><a href="/recruitment" className="hover:text-black transition-colors">Recruitment</a></li>
             </ul>
           </div>
-          
-          {/* <div>
-            <ul className="space-y-2 text-gray-500">
-              <li><a href="#alumni" className="hover:text-black transition-colors">Alumni</a></li>
-              <li><a href="#composites" className="hover:text-black transition-colors">Composites</a></li>
-            </ul>
-          </div> */}
         </div>
         
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-200">
           <div className="text-gray-500 text-sm">
-            © 2025 Zeta Theta Chapter of Pi Kappa Phi at the University of Texas at Austin. All rights reserved.
+            © 2025 The Zeta Theta Chapter of Pi Kappa Phi at the University of Texas at Austin. All rights reserved.
           </div>
           <div className="flex space-x-6 text-sm text-gray-500 mt-4 md:mt-0">
           </div>

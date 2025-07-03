@@ -12,7 +12,7 @@ export default function Officers() {
         <p className="text-lg text-black mb-8">
           Find out more about our organization, our officers, our philanthropy, our recruitment process, and our events.
         </p>
-        <Link href="#officers" className="inline-flex items-center justify-center px-8 py-4 bg-[#005596] text-white text-lg rounded-lg transition-colors hover:bg-[#e0e7ef] space-x-2 w-64 mx-auto md:mx-0">
+        <Link href="/chapter" className="inline-flex items-center justify-center px-8 py-4 bg-[#005596] text-white text-lg rounded-lg transition-colors hover:bg-[#e0e7ef] space-x-2 w-64 mx-auto md:mx-0">
           <span>Meet our Officers</span>
         </Link>
       </div>
