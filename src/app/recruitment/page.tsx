@@ -239,7 +239,7 @@ export default function RecruitmentPage() {
       <main className="flex-1 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl text-[#E7A614] mb-4 font-normal">Recruitment</h1>
-          <p className="text-lg text-gray-700 font-normal">Coming Soon</p>
+          <p className="text-lg text-gray-700 font-normal">Spring 2025 coming soon</p>
         </div>
       </main>
       <Footer />

@@ -30,34 +30,37 @@ export function Header() {
         `}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            <div className="flex items-center space-x-2">
-              <Link href="/home">
-                <img src="/pikapp-coatofarms.png" alt="Pi Kappa Phi Logo" className="h-16" />
-              </Link>
-            </div>
-            <div className="hidden md:flex items-center space-x-8">
-              <a href="/home" className="text-gray-700 hover:text-black transition-colors">Home</a>
-              <a href="/chapter" className="text-gray-700 hover:text-black transition-colors">Chapter</a>
-              <a href="/recruitment" className="text-gray-700 hover:text-black transition-colors">Recruitment</a>
-              <DropdownMenu.Root>
-                <DropdownMenu.Trigger asChild>
-                  <button className="text-gray-700 hover:text-black transition-colors focus:outline-none">Alumni ▾</button>
-                </DropdownMenu.Trigger>
-                <DropdownMenu.Content className="bg-white border border-gray-200 rounded shadow-lg py-2 min-w-[180px] mt-2">
-                  <DropdownMenu.Item asChild>
-                    <a href="/alumni/history" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">History</a>
-                  </DropdownMenu.Item>
-                  <DropdownMenu.Item asChild>
-                    <a href="/alumni/newsletters" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Newsletters</a>
-                  </DropdownMenu.Item>
-                  <DropdownMenu.Item asChild>
-                    <a href="/alumni/composites" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Composites</a>
-                  </DropdownMenu.Item>
-                </DropdownMenu.Content>
-              </DropdownMenu.Root>
-              {/* <a href="#composites" className="text-gray-500 hover:text-black transition-colors">Composites</a> */}
-            </div>
+          <div className="flex justify-center items-center h-16 gap-12">
+          {/* Left side navigation */}
+          <div className="hidden md:flex items-center space-x-12">
+            <a href="/home" className="text-gray-600 hover:text-gray-900 transition-colors">Home</a>
+            <a href="/chapter" className="text-gray-600 hover:text-gray-900 transition-colors">Chapter</a>
+          </div>
+          
+          {/* Center logo */}
+          <div className="flex items-center justify-center">
+            <Link href="/home">
+              <img src="/pkp-letters.jpeg" alt="Pi Kappa Phi Logo" className="h-20" />
+            </Link>
+          </div>
+          
+          {/* Right side navigation */}
+          <div className="hidden md:flex items-center space-x-12">
+            <a href="/recruitment" className="text-gray-600 hover:text-gray-900 transition-colors">Recruitment</a>
+            <DropdownMenu.Root>
+              <DropdownMenu.Trigger asChild>
+                <button className="text-gray-600 hover:text-gray-900 transition-colors focus:outline-none">Alumni</button>
+              </DropdownMenu.Trigger>
+              <DropdownMenu.Content className="bg-white border border-gray-200 rounded-md shadow-lg py-2 min-w-[180px] mt-2">
+                <DropdownMenu.Item asChild>
+                  <a href="/alumni/newsletters" className="block px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-gray-900">Newsletters</a>
+                </DropdownMenu.Item>
+                <DropdownMenu.Item asChild>
+                  <a href="/alumni/composites" className="block px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-gray-900">Composites</a>
+                </DropdownMenu.Item>
+              </DropdownMenu.Content>
+            </DropdownMenu.Root>
+          </div>
           </div>
         </div>
       </div>

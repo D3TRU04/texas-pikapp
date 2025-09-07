@@ -8,6 +8,9 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				'sans': ['Times New Roman', 'Times', 'serif'],
+			},
 			colors: {
 				'burnt-orange': {
 					500: '#BF5700',
@@ -17,6 +20,8 @@ const config: Config = {
 				},
 				'cream': {
 					50: '#FAF9F6',
+					100: '#F5F2ED',
+					200: '#EDE7DD',
 				},
 				'gold': {
 					500: '#FFD700',

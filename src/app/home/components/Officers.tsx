@@ -3,16 +3,16 @@ import Link from 'next/link';
 
 export default function Officers() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center py-16 px-8 md:px-20 bg-transparent gap-8 md:gap-12 mb-20 md:mb-32">
+    <section className="flex flex-col md:flex-row items-center justify-center py-16 px-8 md:px-20 bg-white gap-8 md:gap-12 mb-20 md:mb-32">
       {/* Left: Text and Button */}
       <div className="md:w-1/3 w-full flex flex-col justify-center mb-8 md:mb-0">
         <h2 className="text-3xl mb-6">
-          <span className="bg-black text-white px-4 py-2 rounded">Get to know us</span>
+          <span className="bg-burnt-orange-500 text-cream-50 px-4 py-2 rounded">Get to know us</span>
         </h2>
-        <p className="text-lg text-black mb-8">
+        <p className="text-lg text-charcoal-900 mb-8">
           Find out more about our organization, our officers, our philanthropy, our recruitment process, and our events.
         </p>
-        <Link href="/chapter" className="inline-flex items-center justify-center px-8 py-4 bg-[#005596] text-white text-lg rounded-lg transition-colors hover:bg-[#e0e7ef] space-x-2 w-64 mx-auto md:mx-0">
+        <Link href="/chapter" className="inline-flex items-center justify-center px-8 py-4 bg-burnt-orange-500 text-cream-100 text-lg rounded-lg transition-colors hover:bg-burnt-orange-600 space-x-2 w-64 mx-auto md:mx-0">
           <span>Meet our Officers</span>
         </Link>
       </div>
@@ -30,10 +30,10 @@ export default function Officers() {
       </div>
       {/* Right: Quote */}
       <div className="md:w-1/3 w-full flex flex-col justify-center items-center text-center md:text-left">
-        <blockquote className="text-2xl md:text-3xl italic text-gray-600 mb-4 font-playfair">
-          “You may all go to hell<br />and I will go to Texas.”
+        <blockquote className="text-2xl md:text-3xl italic text-charcoal-900 mb-4 font-playfair">
+          "You may all go to hell<br />and I will go to Texas."
         </blockquote>
-        <div className="text-gray-500 text-lg font-semibold">— DAVY CROCKETT</div>
+        <div className="text-burnt-orange-500 text-lg font-semibold">— DAVY CROCKETT</div>
       </div>
     </section>
   );

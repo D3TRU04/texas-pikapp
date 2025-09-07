@@ -99,51 +99,53 @@ const executiveBoard = [
 
 export default function ChapterPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-yellow-50 relative overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-[#E7A614]/10 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-[#005596]/10 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-gradient-to-br from-[#E7A614]/5 to-transparent rounded-full blur-2xl"></div>
-        <div className="absolute top-1/3 right-1/3 w-48 h-48 bg-gradient-to-bl from-[#005596]/5 to-transparent rounded-full blur-2xl"></div>
-      </div>
+    <div className="min-h-screen bg-white">
+      <Header />
       
-      {/* Subtle grid pattern overlay */}
-      <div className="absolute inset-0 opacity-30" style={{
-        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.02'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-      }}></div>
-      
-      <div className="relative z-10 flex flex-col min-h-screen">
-        <Header />
-        <main className="flex-1 py-12 px-4">
-          <div className="max-w-6xl mx-auto">
-            <h1 className="text-4xl md:text-5xl text-[#E7A614] mt-24 mb-24 font-normal text-center">2025 Executive Board + Chairmen</h1>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
-              {executiveBoard.map((member, index) => (
-                <div key={index} className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/20">
-                  <div className="flex items-center mb-4">
-                    <img 
-                      src={member.imageUrl} 
-                      alt={`${member.name} - ${member.role}`}
-                      className="w-16 h-16 rounded-full object-cover mr-4 border-2 border-[#E7A614]"
-                    />
-                    <div>
-                      <h3 className="text-2xl font-semibold text-[#005596]">{member.name}</h3>
-                      <p className="text-md font-medium text-gray-800">{member.role}</p>
-                    </div>
-                  </div>
-                  <div className="space-y-1">
-                    <p className="text-sm text-gray-600">{member.classification}</p>
-                    <p className="text-sm text-gray-600">{member.majorMinor}</p>
-                  </div>
-                </div>
-              ))}
+      {/* Hero Section */}
+      <section className="pt-24 pb-16 bg-cream-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <div className="flex items-center justify-center mb-8">
+              <span className="text-6xl font-bold text-charcoal-900">20</span>
+              <h1 className="text-4xl md:text-5xl font-normal text-charcoal-900 mx-8">
+                EXECUTIVE BOARD
+              </h1>
+              <span className="text-6xl font-bold text-charcoal-900">25</span>
             </div>
           </div>
-        </main>
-        <Footer />
-      </div>
+        </div>
+      </section>
+
+      {/* Executive Board Grid */}
+      <section className="py-16 bg-cream-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+          <div className="flex flex-wrap justify-center gap-8" style={{maxWidth: 'calc(5 * (160px + 32px))'}}>
+            {executiveBoard.map((member, index) => (
+              <div key={index} className="text-center">
+                <div className="mb-4">
+                  <div className="w-40 h-48 bg-gradient-to-b from-gray-200 to-gray-300 rounded-lg mx-auto flex items-center justify-center">
+                    <span className="text-3xl font-medium text-gray-600">
+                      {member.name.split(' ').map(n => n[0]).join('')}
+                    </span>
+                  </div>
+                </div>
+                <div className="space-y-1">
+                  <h3 className="text-sm font-medium text-charcoal-900">
+                    {member.name}
+                  </h3>
+                  <p className="text-xs text-gray-600">
+                    {member.role}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+      <Footer />
     </div>
   );
 } 

@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-                <img src="/pikapp-logo.png" alt="Pi Kappa Phi Logo" className="h-8" />
+                <img src="/pkp-letters.jpeg" alt="Pi Kappa Phi Logo" className="h-20" />
             </div>
             <p className="text-gray-500 mb-4 max-w-md italic">
                 "Nothing shall ever tear us asunder"
